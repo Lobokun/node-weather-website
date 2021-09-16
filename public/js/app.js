@@ -25,8 +25,9 @@ weatherForm.addEventListener('submit', (e) => {
             messageOne.textContent = data.error
         }
         else{
-            messageOne.textContent = data.name
-            messagetwo.textContent = data.temperature
+            messageOne.textContent = data.name + ', ' + data.region + ', ' + data.country
+            messagetwo.textContent = data.forecast
+           
         }
         
     })

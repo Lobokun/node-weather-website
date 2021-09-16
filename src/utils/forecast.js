@@ -23,7 +23,8 @@ const forecast = (latitude, longitude, callback) => {
              description: current.weather_descriptions[0],
              name: location.name,
              country: location.country,
-             region: location.region
+             region: location.region,
+             forecast: current.weather_descriptions[0] + ". It is currently " + current.temperature + " degrees out. It feels like " + current.feelslike + " degress out. The humidity is " + current.humidity + "%."
 
          })
        
